@@ -58,7 +58,7 @@ def _get_normalizer(domain, resolve):
 
     if resolve:
         for mx in _get_mx_servers(domain):
-            for service_domain, normalizer in _domain_normalizers.iteritems():
+            for service_domain, normalizer in _domain_normalizers.items():
                 if mx.endswith(service_domain):
                     return normalizer
 
