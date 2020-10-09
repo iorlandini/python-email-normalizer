@@ -3,7 +3,7 @@ import setuptools
 
 def requirements_from_file(file_name):
     requirement = []
-    with open(file_name, 'rb') as f:
+    with open(file_name, 'r') as f:
         requirement.extend(f.read().split('\n'))
 
     return requirement
